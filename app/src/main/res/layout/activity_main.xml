@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:id="@+id/cameraImage"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/_12dp"
+        android:src="@drawable/baseline_image_24">
+
+    </ImageView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:text="@string/capture_image"
+        android:backgroundTint="@color/green"
+        android:id="@+id/captureImgBtn">
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ocr_text"
+        android:textSize="@dimen/_26sp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_280dp"
+        android:id="@+id/textResult"
+        android:text=""
+        android:padding="@dimen/_8dp"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="@dimen/_16dp"
+        android:scrollbars="vertical">
+
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/copy_text"
+        android:backgroundTint="@color/green"
+        android:id="@+id/copyBtn"
+        android:visibility="invisible">
+
+    </Button>
+
+
+
+
+
+</LinearLayout>
